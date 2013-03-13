@@ -6,28 +6,28 @@ If you have any questions or feedback, feel free to contact me using [@robertobe
 
 ## Installation
 
-Reference the **flexigin.core.dll** to the desired web project.
+Add the `flexigin.core.dll` reference to the desired web project.
 
 ## Quick start
 
-Using flexigin-net for the server-side is very simple: Just reference one http-handler in the web.config, which will do the rest.
-For example if your entry point should be yourdomain.tld/flexigin/ the configuration will look like this:
+Using flexigin-net for the server-side is very simple: Just reference one http-handler in the `web.config`, which will do the rest.
+For example if your entry point should be *http://yourdomain.tld/flexigin/* the configuration will look like this:
 
     <system.web>
         <httpHandlers>
-          <add verb="GET" path="flexigin/" type="Flexigin.Core.Handler.FlexiginHandler"/>
+            <add verb="GET" path="flexigin/" type="Flexigin.Core.Handler.FlexiginHandler"/>
         </httpHandlers>
     </system.web>
 
     <system.webServer>
         <handlers>
-          <add name="flexigin" verb="GET" path="flexigin/" type="Flexigin.Core.Handler.FlexiginHandler"/>
+            <add name="flexigin" verb="GET" path="flexigin/" type="Flexigin.Core.Handler.FlexiginHandler"/>
         </handlers>
     </system.webServer>
 
-The handler will look for a querystring parameter **p**, which means the path of the component desired.
+The handler will look for a querystring parameter `p`, which means the path of the component desired.
 
-You won't pass everytime the full path, just specify a basePath for flexigin:
+You won't pass everytime the full path, just specify a `basePath` for flexigin:
 
     <add key="flexigin:basePath" value="/components/"/>
 
@@ -43,11 +43,11 @@ As in this example we use a HttpHandler, which is meant to have only one access 
 
 If the client requests `user/js`, this means to return the javascript for the user component.
 
-As the basePath is `/components/`, flexigin will look for `/components/user/*.js`, concatenate and minify them, to return only one result at the end.
+As the `basePath` is `/components/`, flexigin will look for `/components/user/*.js`, concatenate and minify them, to return only one result at the end.
 
 ## Running the tests
 
-The Tests are located in the Flexigin.Test project and are build with NUnit. You can run them with a test-runner as for example resharper provides.
+The Tests are located in the `Flexigin.Test` project and are build with NUnit. You can run them with a test-runner as for example resharper provides.
 
 ## License
 
