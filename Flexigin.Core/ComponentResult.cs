@@ -8,13 +8,11 @@ namespace Flexigin.Core
         public string ContentType { get; set; }
         public HttpStatusCode StatusCode { get; set; }
 
-        public ComponentResult(HttpStatusCode statusCode, string contentType)
+        public ComponentResult(HttpStatusCode statusCode, string contentType) : this(statusCode, contentType, null)
         {
-            this.StatusCode = statusCode;
-            this.ContentType = contentType;
         }
 
-        public ComponentResult(string content, HttpStatusCode statusCode, string contentType)
+        public ComponentResult(HttpStatusCode statusCode, string contentType, string content)
         {
             this.Content = content;
             this.StatusCode = statusCode;

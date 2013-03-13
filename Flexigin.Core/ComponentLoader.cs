@@ -23,7 +23,7 @@ namespace Flexigin.Core
             var contents = this.GetFileContents(fullPath, component.Extension, includeSubDirectories);
             var content = String.Join("", contents);
 
-            return new ComponentResult(Minify(content, component.FileType), HttpStatusCode.OK, contentType);
+            return new ComponentResult(HttpStatusCode.OK, contentType, Minify(content, component.FileType));
         }
 
         private string Minify(string content, FileType fileType)
@@ -50,7 +50,7 @@ namespace Flexigin.Core
             }
             catch (Exception)
             {
-                fileContent = "";
+                throw;
             }
             return fileContent;
         }
