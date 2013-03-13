@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flexigin.Core", "flexigin.core\Flexigin.Core.csproj", "{685B9EC8-60DB-4DC2-9015-05E1B6DBF3F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flexigin.Test", "Flexigin.Test\Flexigin.Test.csproj", "{862D21AE-1F59-4EFE-A7E7-9560BC8CB8F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flexigin.Demo", "Flexigin.Demo\Flexigin.Demo.csproj", "{6B9DB8CC-5683-4C8C-8AC9-192C755AC86F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{685B9EC8-60DB-4DC2-9015-05E1B6DBF3F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{685B9EC8-60DB-4DC2-9015-05E1B6DBF3F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{685B9EC8-60DB-4DC2-9015-05E1B6DBF3F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{685B9EC8-60DB-4DC2-9015-05E1B6DBF3F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{862D21AE-1F59-4EFE-A7E7-9560BC8CB8F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{862D21AE-1F59-4EFE-A7E7-9560BC8CB8F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{862D21AE-1F59-4EFE-A7E7-9560BC8CB8F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{862D21AE-1F59-4EFE-A7E7-9560BC8CB8F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B9DB8CC-5683-4C8C-8AC9-192C755AC86F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B9DB8CC-5683-4C8C-8AC9-192C755AC86F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B9DB8CC-5683-4C8C-8AC9-192C755AC86F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B9DB8CC-5683-4C8C-8AC9-192C755AC86F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
