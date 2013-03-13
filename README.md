@@ -11,7 +11,7 @@ Add the `flexigin.core.dll` reference to the desired web project.
 ## Quick start
 
 Using flexigin-net for the server-side is very simple: Just reference one http-handler in the `web.config`, which will do the rest.
-For example if your entry point should be *http://yourdomain.tld/flexigin/* the configuration will look like this:
+For example if your entry point should be *http://example.com/flexigin/* the configuration will look like this:
 
     <system.web>
         <httpHandlers>
